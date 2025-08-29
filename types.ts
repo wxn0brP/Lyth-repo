@@ -17,6 +17,24 @@ declare global {
          * @param path The path to the module.
          */
         function _importSRC(path: string): any;
+
+        /** 
+         * Create a desktop file.
+         * @param entry The desktop file entry.
+         */
+        function createDesktopFile(entry: DesktopEntry): void;
+    }
+
+    interface DesktopEntry {
+        name: string;
+        exec: string;
+        icon?: string;
+        comment?: string;
+        categories?: string[];
+        terminal?: boolean;
+        type?: "Application" | "Link" | "Directory";
+        startupNotify?: boolean;
+        mimeType?: string[];
     }
 }
 
