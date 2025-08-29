@@ -1,0 +1,11 @@
+{
+    "name": "lyth-repo",
+    "homepage": "https://github.com/wxn0brp/Lyth-repo",
+    "author": "wxn0brP",
+    "license": "MIT",
+    "type": "module",
+    "devDependencies": {
+        "@types/bun": "*",
+        "typescript": "*"
+    }
+}
