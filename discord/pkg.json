@@ -1,4 +1,5 @@
 {
     "name": "discord",
-    "description": "Discord"
+    "description": "Discord",
+    "icon": "discord.com"
 }
