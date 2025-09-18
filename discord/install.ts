@@ -8,4 +8,13 @@ if (existsSync("Discord")) rmSync("Discord", { recursive: true, force: true });
 await $`curl -L "https://discord.com/api/download?platform=linux&format=tar.gz" -o Discord.tar.gz`;
 await $`tar -xzf Discord.tar.gz`;
 rmSync("Discord.tar.gz");
+
+const discordPath = process.cwd() + "/Discord/";
+globalThis.createDesktopFile({
+    name: "Discord",
+    exec: discordPath + "Discord",
+    comment: "Discord",
+    categories: ["Internet"],
+    iconInternal: "com.discordapp.Discord",
+});
 export default version;
