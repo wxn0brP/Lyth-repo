@@ -15,6 +15,6 @@ globalThis.createDesktopFile({
     exec: discordPath + "Discord",
     comment: "Discord",
     categories: ["Internet"],
-    iconInternal: "com.discordapp.Discord",
+    iconInternal: "discord",
 });
 export default version;
